@@ -1,0 +1,39 @@
+@layer components {
+    header {
+        @apply absolute inset-0 text-white py-4 h-[80px];
+    }
+
+    .header .container {
+        @apply flex flex-nowrap items-center justify-between gap-2;
+    }
+
+    .menu {
+        @apply flex flex-wrap gap-8;
+    }
+
+    .menu ul {
+        @apply flex flex-wrap !gap-x-8;
+    }
+
+    .menu a {
+        @apply cursor-pointer;
+    }
+
+    .header .menu a::after {
+        content: "";
+        @apply block w-[0] h-[2px] bg-primary mt-[2px];
+        transition: width 0.3s;
+    }
+
+    .header  .menu a:hover::after {
+        @apply w-full;
+    }
+
+    .footer {
+        @apply py-10
+    }
+
+    .footer nav a {
+        @apply hover:text-primary;
+    }
+}

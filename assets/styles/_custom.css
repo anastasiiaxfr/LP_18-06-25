@@ -1,0 +1,148 @@
+@layer components {
+
+    .section {
+        @apply my-10 lg:my-20;
+    }
+
+    .section_hero {
+        @apply my-0 pb-10 pt-20 lg:py-20 bg-black text-white bg-no-repeat bg-cover;
+        background-image: url('../img/bg/bg0.jpg');
+    }
+
+    .section_hero * {
+        @apply text-center md:text-left justify-center md:justify-start;
+    }
+
+    .section_hero .container {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-5 items-center;
+    }
+
+    .section_brands {
+        @apply bg-3 py-4 hidden lg:block;
+    }
+
+    .section_2 {
+        @apply my-0 py-10 lg:py-20 bg-black text-white bg-no-repeat bg-cover;
+        background-image: url('../img/bg/bg1.jpg');
+    }
+
+    .section_comments {
+        @apply my-0 py-10 lg:py-20 bg-gray-50;
+    }
+
+    .section_cta {
+        @apply mb-0;
+    }
+
+    .row {
+        @apply flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-10 items-center;
+    }
+
+    .row * {
+        @apply text-center md:text-left justify-center md:justify-start;
+    }
+
+    .row_2 {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-10 my-10;
+    }
+
+    .row_3 {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10;
+    }
+
+    .brands {
+        @apply gap-10 items-center flex-wrap justify-start overflow-hidden grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 200px;
+    }
+
+    .tabs {
+        @apply !flex flex-col md:!flex-row !gap-10 mt-10 justify-center items-center;
+    }
+
+    .tabs_list {
+        @apply flex flex-col items-start justify-start gap-0 !bg-transparent p-0 !w-full !h-full select-none;
+    }
+
+    .tabs_item {
+        @apply w-full border border-gray-300 rounded-xl p-4;
+    }
+
+    .tabs_trigger {
+        @apply text-left !p-2 !h-[auto] w-full !border-l-10 !border-l-gray-200 !rounded-none opacity-50 cursor-pointer;
+    }
+
+    .tabs_trigger[data-state="active"] {
+        @apply !border-l-3 !shadow-none opacity-100;
+    }
+
+    .tabs_trigger[data-state="active"] .tabs_item {
+        @apply bg-4 border-4;
+    }
+
+    .tabs_title {
+        @apply text-xl md:text-lg lg:text-xl font-bold;
+    }
+
+    .tabs_desc {
+        @apply text-sm text-muted-foreground mt-2;
+        white-space: break-spaces;
+    }
+
+    .card {
+        @apply bg-gray-50 border border-gray-100 rounded-2xl  min-h-[350px];
+    }
+
+    .card img {
+        @apply block;
+    }
+
+    .card_1 {
+        @apply grid grid-cols-1 md:grid-cols-2;
+    }
+
+    .card_2 {
+        @apply bg-6 text-white text-center p-10 items-center justify-center flex;
+    }
+
+    .items {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10;
+    }
+
+    .item {
+        @apply bg-white rounded-2xl p-10 cursor-pointer select-none;
+    }
+
+    .item_desc {
+        @apply my-5;
+    }
+
+    .item_info {
+        @apply grid grid-cols-[50px_auto] gap-3 items-center;
+    }
+
+    .item_info > img {
+        @apply w-[50px] h-[50px] rounded-full;
+    }
+
+    .item_title {
+        @apply mt-2;
+    }
+
+    .item_label {
+        @apply text-sm opacity-50; 
+    }
+
+    .cta {
+        @apply bg-black text-white bg-cover bg-no-repeat rounded-2xl grid grid-cols-1 md:grid-cols-2 gap-10 text-center md:text-left;
+        background-image: url('../img/bg/bg2.jpg');
+    }
+
+    .cta * {
+        @apply justify-center md:justify-start;
+    }
+
+    .cta_img {
+        @apply flex items-end justify-center;
+    }
+}

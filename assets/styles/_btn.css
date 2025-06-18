@@ -1,0 +1,20 @@
+.btn {
+    @apply rounded-full px-8 py-6 cursor-pointer hover:bg-2 min-w-[200px];
+}
+
+.btn-bd {
+    @apply rounded-full px-8 py-6 cursor-pointer hover:bg-2 hover:text-white bg-transparent border border-2 text-2  min-w-[200px];
+}
+
+.btn-bd-white {
+    @apply bg-transparent hover:bg-white hover:text-black hover:border-white; 
+}
+
+.btn-circle {
+    @apply rounded-full p-6 cursor-pointer hover:bg-1;
+}
+
+.btns {
+    @apply flex mt-10 gap-4 flex-wrap;
+}
+
